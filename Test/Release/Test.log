@@ -1,0 +1,33 @@
+﻿  stdafx.cpp
+  Code.cpp
+Code.cpp(185): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+Code.cpp(195): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+  Func.cpp
+Func.cpp(12): warning C4018: “<”: 有符号/无符号不匹配
+  LoginDlg.cpp
+i:\myproject\attop\sk-mfc\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(114): note: 参见“ERROR”的前一个定义
+  Test.cpp
+i:\myproject\attop\sk-mfc\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(114): note: 参见“ERROR”的前一个定义
+  TestDlg.cpp
+i:\myproject\attop\sk-mfc\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
+  C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(114): note: 参见“ERROR”的前一个定义
+TestDlg.cpp(909): warning C4244: “参数”: 从“__int64”转换到“double”，可能丢失数据
+TestDlg.cpp(909): warning C4244: “=”: 从“double”转换到“__int64”，可能丢失数据
+TestDlg.cpp(934): warning C4244: “参数”: 从“DOUBLE”转换到“__int64”，可能丢失数据
+TestDlg.cpp(945): warning C4244: “初始化”: 从“ULONGLONG”转换到“unsigned int”，可能丢失数据
+TestDlg.cpp(946): warning C4244: “参数”: 从“ULONGLONG”转换到“size_t”，可能丢失数据
+TestDlg.cpp(947): warning C4244: “参数”: 从“ULONGLONG”转换到“UINT”，可能丢失数据
+TestDlg.cpp(1028): warning C4018: “<”: 有符号/无符号不匹配
+TestDlg.cpp(1034): warning C4018: “<”: 有符号/无符号不匹配
+TestDlg.cpp(1035): warning C4018: “<”: 有符号/无符号不匹配
+TestDlg.cpp(1046): warning C4018: “<”: 有符号/无符号不匹配
+  HttpClient.cpp
+HttpClient.cpp(40): warning C4244: “=”: 从“DWORD”转换到“INTERNET_PORT”，可能丢失数据
+  正在生成代码
+  All 466 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  Test.vcxproj -> I:\MyProject\attop\SK-MFC\Release\刷客——至善网刷课软件.exe

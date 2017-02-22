@@ -1,0 +1,286 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Test.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Test.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 167, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于刷客"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,19,30,20,20
+    LTEXT           "刷客",IDC_STATIC,57,25,65,8,SS_NOPREFIX
+    LTEXT           "本软件只做测试之用，不能用于其他用途！\r\n     ——by Martin",IDC_STATIC,56,39,87,26
+    DEFPUSHBUTTON   "确定",IDOK,57,83,50,16,WS_GROUP
+END
+
+IDD_TEST_DIALOG DIALOGEX 0, 0, 433, 261
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "刷客——至善网刷课软件 V3.1"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "登录",IDC_LOGIN,7,8,42,21,WS_GROUP
+    PUSHBUTTON      "开刷",IDC_PASS,54,8,41,21,WS_DISABLED
+    CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,33,417,111
+    EDITTEXT        IDC_EDIT_PUT,7,153,417,101,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "关注作者",IDC_LOGIN2,383,8,42,21,WS_GROUP
+    PUSHBUTTON      "英语网课",IDC_LOGIN3,337,8,42,21,WS_GROUP
+END
+
+IDD_DIALOGLOGIN DIALOGEX 0, 0, 197, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入至善网账号"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT2,57,14,125,14,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT3,57,33,125,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,57,52,73,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,71,77,53,19
+    PUSHBUTTON      "获取",IDC_BUTTON1,135,51,47,16
+    LTEXT           "用户名：",IDC_STATIC,7,17,45,12
+    LTEXT           "密码：",IDC_STATIC,7,36,45,12
+    LTEXT           "软件密码：",IDC_STATIC,7,56,47,12
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "刷客"
+            VALUE "FileDescription", "刷客——至善网刷课软件"
+            VALUE "FileVersion", "3.0"
+            VALUE "InternalName", "SK.exe"
+            VALUE "LegalCopyright", "刷客保留所有权利。"
+            VALUE "OriginalFilename", "SK.exe"
+            VALUE "ProductName", "刷客——至善网刷课软件"
+            VALUE "ProductVersion", "3.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_TEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 429
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 254
+    END
+
+    IDD_DIALOGLOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 190
+        VERTGUIDE, 97
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_TEST_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOGLOGIN AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    ERRORMSG                "软件密码错误！请联系作者获取。"
+    SKINTRODUCTION          "1、理论上，网速越快，刷题完成的速度也就越快。\r\n2、本软件采用题库刷题，如果有错请联系作者更正。\r\n3、课程时间可以快速刷完，方法请看作者网站。\r\n4、本软件仅供测试，不能用于其他用途。"
+    USEKEY                  "super"
+    DownloadVersion         "http://supermartin.cn/TK3/Version.txt"
+    DownloadAnswer          "http://supermartin.cn/TK3/CourseID.txt"
+END
+
+STRINGTABLE
+BEGIN
+    LOADPAGE101             "http://www.attop.com/js/ajax/call/plaincall/__System.generateId.dwr"
+    LOADPAGE102             "callCount=1\nc0-scriptName=__System\nc0-methodName=generateId\nc0-id=0\nbatchId=0\ninstanceId=0\npage=%2Findex.htm\nscriptSessionId=\nwindowName=\n"
+    LOGIN103                "http://www.attop.com/js/ajax/call/plaincall/zsClass.coreAjax.dwr"
+    LOGIN104                "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=coreAjax\nc0-id=0\nc0-param0=string:login\nc0-e1=string:Username\nc0-e2=string:Password\n\nc0-e3=string:AuthorCode\nc0-e4=number:2\nc0-param1=Object_Object:{username:reference:c0-e1, password:reference:c0-e2, rand:reference:c0-e3, autoflag:reference:c0-e4}\nc0-param2=string:doLogin\nbatchId=1\ninstanceId=0\npage=%2Flogin_pop.htm\nscriptSessionId="
+    LOGIN105                "Referer: http://www.attop.com/login_pop.htm"
+    HOWMUCH106              "http://www.attop.com/js/ajax/call/plaincall/zsClass.commonAjax.dwr"
+    HOWMUCH107              "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=commonAjax\nc0-id=0\nc0-param0=string:getAjaxList\nc0-e1=string:\nc0-e2=string:study.htm\nc0-e3=number:1\nc0-e4=string:showajaxinfo\nc0-param1=Object_Object:{param:reference:c0-e1, pagename:reference:c0-e2, currentpage:reference:c0-e3, showmsg:reference:c0-e4}\nc0-param2=string:doGetAjaxList\nbatchId=2\ninstanceId=0\npage=%2Fuser%2Fstudy.htm\nscriptSessionId="
+    HOWMUCH108              "Referer:http://www.attop.com/user/study.htm"
+    ke109                   "http://www.attop.com/js/ajax/call/plaincall/zsClass.commonAjax.dwr"
+    ke110                   "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=commonAjax\nc0-id=0\nc0-param0=string:getWkOnlineNum\nc0-e1=number:CourseID\nc0-e2=number:SectionID\nc0-param1=Object_Object:{bid:reference:c0-e1, jid:reference:c0-e2}\nc0-param2=string:doGetWkOnlineNum\nbatchId=BatchID\ninstanceId=0\npage=%2Fwk%2Flearn.htm%3Fid%3DCourseID%26jid%3DSectionID\nscriptSessionId="
+END
+
+STRINGTABLE
+BEGIN
+    ke112                   "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=commonAjax\nc0-id=0\nc0-param0=string:getAjaxList2\nc0-e1=string:id%3DCourseID%26jid%3DSectionID\nc0-e2=string:learn_1.htm\nc0-e3=number:1\nc0-e4=string:showajaxinfo2\nc0-param1=Object_Object:{param:reference:c0-e1, pagename:reference:c0-e2, currentpage:reference:c0-e3, id:reference:c0-e4}\nc0-param2=string:doShowAjaxList2\nbatchId=BatchID\ninstanceId=0\npage=%2Fwk%2Flearn.htm%3Fid%3DCourseID\nscriptSessionId="
+    TI115                   "http://www.attop.com/js/ajax/call/plaincall/zsClass.commonAjax.dwr"
+    TI116                   "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=commonAjax\nc0-id=0\nc0-param0=string:getAjaxList\nc0-e1=string:id%3DCourseID%26jid%3DSectionID\nc0-e2=string:learn.htm\nc0-e3=number:1\nc0-e4=string:showajaxinfo\nc0-param1=Object_Object:{param:reference:c0-e1, pagename:reference:c0-e2, currentpage:reference:c0-e3, showmsg:reference:c0-e4}\nc0-param2=string:doGetAjaxList\nbatchId=2\ninstanceId=0\npage=%2Fwk%2Flearn.htm%3Fid%3DCourseID\nscriptSessionId="
+    TI117                   "Referer: http://www.attop.com/wk/learn.htm?id=CourseID&jid=SectionID"
+    POSTTI118               "http://www.attop.com/js/ajax/call/plaincall/zsClass.dotAjax.dwr"
+    POSTTI119               "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=dotAjax\nc0-id=0\nc0-param0=string:doSubmitWkXtAll\nc0-e1=number:CourseID\nc0-e2=number:SectionID\nc0-e3=string:Answer\nc0-param1=Object_Object:{bid:reference:c0-e1, jid:reference:c0-e2, msg:reference:c0-e3}\nc0-param2=string:doCommonReturn\nbatchId=4\ninstanceId=0\npage=%2Fwk%2Flearn.htm%3Fid%3DCourseID\nscriptSessionId="
+    POSTTI120               "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=dotAjax\nc0-id=0\nc0-param0=string:doResetWkXt\nc0-e1=number:CourseID\nc0-e2=number:SectionID\nc0-e3=number:AnswerID\nc0-param1=Object_Object:{bid:reference:c0-e1, jid:reference:c0-e2, pid:reference:c0-e3}\nc0-param2=string:doCommonReturn\nbatchId=3\ninstanceId=0\npage=%2Fwk%2Flearn.htm%3Fid%3DCourseID%26jid%3DSectionID\nscriptSessionId="
+    MEDIAPJ121              "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=dotAjax\nc0-id=0\nc0-param0=string:doWkMediaPj\nc0-e1=number:MediaID\nc0-e2=number:3\nc0-param1=Object_Object:{id:reference:c0-e1, type:reference:c0-e2}\nc0-param2=string:doWkMediaPj\nbatchId=1\ninstanceId=0\npage=%2Fwk%2Fmedia_pop.htm%3Fid%3DMediaID\nscriptSessionId="
+    MEDIAPJ122              "Referer: http://www.attop.com/wk/media_pop.htm?id=MediaID"
+    LOGIN_IMAGE             "http://www.attop.com/image.jpg"
+END
+
+STRINGTABLE
+BEGIN
+    SKVersion               "201610241200"
+END
+
+STRINGTABLE
+BEGIN
+    TestUser                "对不起，一台电脑最多为两个账号刷课！\n请换台电脑重试，或者使用之前登录过的账号。\n\n这是为了避免出现有人使用本软件收费代刷课的情况，请自重！"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Test.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
