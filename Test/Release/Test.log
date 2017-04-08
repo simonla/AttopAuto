@@ -7,13 +7,13 @@ Code.cpp(195): warning C4996: 'sprintf': This function or variable may be unsafe
   Func.cpp
 Func.cpp(12): warning C4018: “<”: 有符号/无符号不匹配
   LoginDlg.cpp
-i:\myproject\attop\sk-mfc\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
+c:\users\10656\desktop\assistant-attop-master\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
   C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(114): note: 参见“ERROR”的前一个定义
   Test.cpp
-i:\myproject\attop\sk-mfc\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
+c:\users\10656\desktop\assistant-attop-master\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
   C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(114): note: 参见“ERROR”的前一个定义
   TestDlg.cpp
-i:\myproject\attop\sk-mfc\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
+c:\users\10656\desktop\assistant-attop-master\test\resource.h(7): warning C4005: “ERROR”: 宏重定义
   C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(114): note: 参见“ERROR”的前一个定义
 TestDlg.cpp(909): warning C4244: “参数”: 从“__int64”转换到“double”，可能丢失数据
 TestDlg.cpp(909): warning C4244: “=”: 从“double”转换到“__int64”，可能丢失数据
@@ -28,6 +28,6 @@ TestDlg.cpp(1046): warning C4018: “<”: 有符号/无符号不匹配
   HttpClient.cpp
 HttpClient.cpp(40): warning C4244: “=”: 从“DWORD”转换到“INTERNET_PORT”，可能丢失数据
   正在生成代码
-  All 466 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 462 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
-  Test.vcxproj -> I:\MyProject\attop\SK-MFC\Release\刷客——至善网刷课软件.exe
+  Test.vcxproj -> C:\Users\10656\Desktop\Assistant-Attop-master\Release\刷客——至善网刷课软件.exe

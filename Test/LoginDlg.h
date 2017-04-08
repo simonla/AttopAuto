@@ -28,8 +28,5 @@ public:
 	CButton m_Confirm;
 	afx_msg void OnBnClickedOk();
 	virtual BOOL OnInitDialog();
-	CEdit m_Usekey;
-	CButton m_Getusekey;
-	afx_msg void OnBnClickedButton1();
 };
 #endif

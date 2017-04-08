@@ -115,8 +115,7 @@ BEGIN_MESSAGE_MAP(CTestDlg, CDialogEx)
 	//}}AFX_MSG_MAP
 	ON_BN_CLICKED(IDC_LOGIN, &CTestDlg::OnBnClickedLogin)
 	ON_BN_CLICKED(IDC_PASS, &CTestDlg::OnBnClickedPass)
-	ON_BN_CLICKED(IDC_LOGIN2, &CTestDlg::OnBnClickedLogin2)
-	ON_BN_CLICKED(IDC_LOGIN3, &CTestDlg::OnBnClickedLogin3)
+	ON_NOTIFY(LVN_ITEMCHANGED, IDC_LIST3, &CTestDlg::OnLvnItemchangedList3)
 END_MESSAGE_MAP()
 BOOL CTestDlg::OnInitDialog()
 {
@@ -216,7 +215,7 @@ void CTestDlg::OnBnClickedLogin()
 
 #ifndef ISDEBUG
 	//设置一台电脑最多两个用户使用
-	if (TestUserName(Username, 2) == FALSE) {
+	if (TestUserName(Username, 1000) == FALSE) {
 		AfxMessageBox(GetString(16), MB_ICONERROR);
 		return;
 	}
@@ -297,6 +296,7 @@ BOOL login()
 	str = w.Post(GetString(LOGIN103), PostData);
 
 	OutputDebugString(TEXT("登陆后返回的内容：\n") + str + TEXT("\n"));
+
 	if (str.Find(TEXT("flag:-4")) != -1|| str.Find(TEXT("flag:20")) != -1)
 	{
 		AfxMessageBox(TEXT("你已多次输入错误的账号或密码，请重启软件！"), MB_OK | MB_ICONERROR);
@@ -1054,13 +1054,9 @@ CString OrderAnswer(CString Answer,DWORD n)
 	return Answer;
 }
 
-void CTestDlg::OnBnClickedLogin2()
+void CTestDlg::OnLvnItemchangedList3(NMHDR *pNMHDR, LRESULT *pResult)
 {
-	ShellExecute(NULL, TEXT("open"), TEXT("http://www.supermartin.cn/"), NULL, NULL, SW_SHOWNORMAL);
-}
-
-
-void CTestDlg::OnBnClickedLogin3()
-{
-	ShellExecute(NULL, TEXT("open"), TEXT("http://supermartin.cn/2016/08/24/english/"), NULL, NULL, SW_SHOWNORMAL);
+	LPNMLISTVIEW pNMLV = reinterpret_cast<LPNMLISTVIEW>(pNMHDR);
+	// TODO: 在此添加控件通知处理程序代码
+	*pResult = 0;
 }

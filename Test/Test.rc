@@ -77,7 +77,7 @@ FONT 9, "宋体", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,19,30,20,20
     LTEXT           "刷客",IDC_STATIC,57,25,65,8,SS_NOPREFIX
-    LTEXT           "本软件只做测试之用，不能用于其他用途！\r\n     ——by Martin",IDC_STATIC,56,39,87,26
+    LTEXT           "本软件只做测试之用，不能用于其他用途！\r\n",IDC_STATIC,56,39,87,26
     DEFPUSHBUTTON   "确定",IDOK,57,83,50,16,WS_GROUP
 END
 
@@ -91,8 +91,6 @@ BEGIN
     PUSHBUTTON      "开刷",IDC_PASS,54,8,41,21,WS_DISABLED
     CONTROL         "",IDC_LIST3,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,33,417,111
     EDITTEXT        IDC_EDIT_PUT,7,153,417,101,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
-    PUSHBUTTON      "关注作者",IDC_LOGIN2,383,8,42,21,WS_GROUP
-    PUSHBUTTON      "英语网课",IDC_LOGIN3,337,8,42,21,WS_GROUP
 END
 
 IDD_DIALOGLOGIN DIALOGEX 0, 0, 197, 103
@@ -102,12 +100,9 @@ FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     EDITTEXT        IDC_EDIT2,57,14,125,14,ES_AUTOHSCROLL | WS_GROUP
     EDITTEXT        IDC_EDIT3,57,33,125,14,ES_PASSWORD | ES_AUTOHSCROLL
-    EDITTEXT        IDC_EDIT4,57,52,73,14,ES_AUTOHSCROLL
     DEFPUSHBUTTON   "确定",IDOK,71,77,53,19
-    PUSHBUTTON      "获取",IDC_BUTTON1,135,51,47,16
     LTEXT           "用户名：",IDC_STATIC,7,17,45,12
     LTEXT           "密码：",IDC_STATIC,7,36,45,12
-    LTEXT           "软件密码：",IDC_STATIC,7,56,47,12
 END
 
 
@@ -216,9 +211,7 @@ STRINGTABLE
 BEGIN
     ERRORMSG                "软件密码错误！请联系作者获取。"
     SKINTRODUCTION          "1、理论上，网速越快，刷题完成的速度也就越快。\r\n2、本软件采用题库刷题，如果有错请联系作者更正。\r\n3、课程时间可以快速刷完，方法请看作者网站。\r\n4、本软件仅供测试，不能用于其他用途。"
-    USEKEY                  "super"
-    DownloadVersion         "http://supermartin.cn/TK3/Version.txt"
-    DownloadAnswer          "http://supermartin.cn/TK3/CourseID.txt"
+    USEKEY                  "fuckingattop"
 END
 
 STRINGTABLE
@@ -226,7 +219,7 @@ BEGIN
     LOADPAGE101             "http://www.attop.com/js/ajax/call/plaincall/__System.generateId.dwr"
     LOADPAGE102             "callCount=1\nc0-scriptName=__System\nc0-methodName=generateId\nc0-id=0\nbatchId=0\ninstanceId=0\npage=%2Findex.htm\nscriptSessionId=\nwindowName=\n"
     LOGIN103                "http://www.attop.com/js/ajax/call/plaincall/zsClass.coreAjax.dwr"
-    LOGIN104                "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=coreAjax\nc0-id=0\nc0-param0=string:login\nc0-e1=string:Username\nc0-e2=string:Password\n\nc0-e3=string:AuthorCode\nc0-e4=number:2\nc0-param1=Object_Object:{username:reference:c0-e1, password:reference:c0-e2, rand:reference:c0-e3, autoflag:reference:c0-e4}\nc0-param2=string:doLogin\nbatchId=1\ninstanceId=0\npage=%2Flogin_pop.htm\nscriptSessionId="
+    LOGIN104                "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=coreAjax\nc0-id=0\nc0-param0=string:loginWeb\nc0-e1=string:Username\nc0-e2=string:Password\n\nc0-e3=string:AuthorCode\nc0-e4=number:2\nc0-param1=Object_Object:{username:reference:c0-e1, password:reference:c0-e2, rand:reference:c0-e3, autoflag:reference:c0-e4}\nc0-param2=string:doLogin\nbatchId=1\ninstanceId=0\npage=%2Flogin_pop.htm\nscriptSessionId="
     LOGIN105                "Referer: http://www.attop.com/login_pop.htm"
     HOWMUCH106              "http://www.attop.com/js/ajax/call/plaincall/zsClass.commonAjax.dwr"
     HOWMUCH107              "callCount=1\nwindowName=\nc0-scriptName=zsClass\nc0-methodName=commonAjax\nc0-id=0\nc0-param0=string:getAjaxList\nc0-e1=string:\nc0-e2=string:study.htm\nc0-e3=number:1\nc0-e4=string:showajaxinfo\nc0-param1=Object_Object:{param:reference:c0-e1, pagename:reference:c0-e2, currentpage:reference:c0-e3, showmsg:reference:c0-e4}\nc0-param2=string:doGetAjaxList\nbatchId=2\ninstanceId=0\npage=%2Fuser%2Fstudy.htm\nscriptSessionId="

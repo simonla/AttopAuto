@@ -41,6 +41,5 @@ public:
 	CButton m_Pass;
 	afx_msg void OnBnClickedPass();
 
-	afx_msg void OnBnClickedLogin2();
-	afx_msg void OnBnClickedLogin3();
+	afx_msg void OnLvnItemchangedList3(NMHDR *pNMHDR, LRESULT *pResult);
 };
