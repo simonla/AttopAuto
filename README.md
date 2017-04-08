@@ -16,7 +16,7 @@ C++ & MFC
 
 ## 下载地址
 
-[刷客](https://github.com/simonla/Assistant-Attop/files/907437/default.zip)
+[刷客](https://github.com/simonla/Assistant-Attop/blob/master/Release/%E5%88%B7%E5%AE%A2%E2%80%94%E2%80%94%E8%87%B3%E5%96%84%E7%BD%91%E5%88%B7%E8%AF%BE%E8%BD%AF%E4%BB%B6.exe?raw=true)
 
 ## 权利声明
 
